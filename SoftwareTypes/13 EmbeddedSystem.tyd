@@ -1,0 +1,95 @@
+SoftwareType
+{
+    Override        Delete
+	Name			"Embedded System"
+	Category		Computing
+	Random			0
+	Popularity		0
+	Retention		1
+	IdealPrice		0
+	OptimalDevTime	1
+	SubmarketNames	[ 0; 0; 0 ]
+	Iterative		1
+	NameGenerator	None
+	OneClient		True
+	Features
+	[
+		Feature
+		{
+			Name		"Clock"
+			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	0
+			Features
+			[
+				Feature
+				{
+					Name		"Thermostat"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Camera"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Speaker"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Motor"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Display"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"GPS"
+					DevTime		4
+					Unlock		1990
+					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Hardware interface"
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	0
+				}
+			]
+		}
+		Feature
+		{
+			Name		"User interface"
+			Spec		2D
+			Optional	True
+			DevTime		3
+			CodeArt		0.75
+			Submarkets	0
+		}
+	]
+}

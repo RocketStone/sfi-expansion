@@ -1,0 +1,10 @@
+CompanyType
+	{
+	Specialization		"Office"
+	PerYear				0.2
+	Min					2
+	Max					2
+	Types
+		[
+		]
+	}

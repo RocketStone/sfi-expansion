@@ -1,0 +1,110 @@
+SoftwareType
+{
+    Override        Delete
+	Name			"Game Assets"
+	Category		Gaming
+	Random			0
+	Popularity		0
+	Retention		1
+	IdealPrice		0
+	OptimalDevTime	1
+	SubmarketNames	[ 0; 0; 0 ]
+	Iterative		1
+	NameGenerator	None
+	OneClient		True
+	Features
+	[
+		Feature
+		{
+			Name		"2D art"
+			Spec		2D
+			DevTime		1
+			CodeArt		0
+			Submarkets	[ 1; 1; 1 ]
+			Features
+			[
+				Feature
+				{
+					Name		"User interface graphics"
+					DevTime		2
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+				}
+				Feature
+				{
+					Name		"Concept art"
+					DevTime		3
+					Level		2
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+				}
+			]
+		}
+		Feature
+		{
+			Name		"Sound effects"
+			Spec		Audio
+			Optional	True
+			DevTime		2
+			CodeArt		0
+			Submarkets	[ 1; 1; 1 ]
+			Features
+			[
+				Feature
+				{
+					Name		"Music"
+					DevTime		5
+					Level		2
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+				}
+				Feature
+				{
+					Name		"Written Dialogue"
+					DevTime		3
+					Level		2
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+				}
+			]
+		}
+		Feature
+		{
+			Name		"3D models"
+			Spec		3D
+			Optional	True
+			Unlock		1990
+			DevTime		5
+			CodeArt		0
+			Submarkets	[ 1; 1; 1 ]
+			Features
+			[
+				Feature
+				{
+					Name		"Textures"
+					DevTime		2
+					Level		2
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+				}
+				Feature
+				{
+					Name		"Environments"
+					DevTime		3
+					Level		2
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+				}
+				Feature
+				{
+					Name		"Rigging and animation"
+					DevTime		3
+					Level		3
+					CodeArt		0
+					Submarkets	[ 1; 1; 1 ]
+				}
+			]
+		}
+	]
+}

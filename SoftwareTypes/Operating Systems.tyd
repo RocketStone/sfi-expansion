@@ -1,0 +1,538 @@
+SoftwareType
+	{
+	Name			"Operating System"
+	Override        True
+	Category		Computing
+	Description		"The Operating System is the largest and most important piece of software for any device."
+	Categories
+		[
+			{
+			Name		"Computer"
+			Description	"A desktop or laptop system used on a regular basis."
+			Popularity	0.95
+			Retention	72
+			TimeScale	1
+			Iterative	1
+			IdealPrice	200
+			Submarkets	[ 1; 4; 4]
+			}
+			{
+			Name		"Console"
+			Description	"Entertainment system for the living room."
+			Popularity	0.75
+			Retention	48
+			TimeScale	0.8
+			Iterative	1
+			IdealPrice	160
+			Submarkets	[ 4; 1; 0]
+			}
+			{
+			Name		"Smartphone"
+			Description	"Basically your computer in your pocket."
+			Popularity	1
+			Retention	36
+			TimeScale	0.7
+			Iterative	1
+			IdealPrice	140
+			Unlock      2007
+			Submarkets	[ 4; 1; 2]
+			}
+			{
+			Name        "Smartwatch"
+			Description "More of your favorite smartwatch applications, now on your wrist!"
+			Popularity  0.60
+			Retention   40
+			TimeScale   0.5
+			Iterative   1
+			IdealPrice  120
+			Unlock      2010
+			Submarkets  [3; 2; 4;]
+			}
+		]
+	Random			0
+	OptimalDevTime	75
+	SubmarketNames	[ Simplicity; Security; Customization ]
+	NameGenerator	OS
+	Features
+		[
+			{
+			Name		"System"
+			Spec		System
+			DevTime		10
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Multitasking"
+					Description "Allows the user to use more than one program at a time."
+					DevTime		4
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Computer;0];[Smartphone;2010]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Backwards Compatability"
+					Description "Allows programs of older versions of this software to still work in this version."
+					DevTime		6
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;1990];[Smartphone;0];[Console;2000]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Plug and Play"
+					Description "Easy and stressless way to connect devices."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2000];[Smartphone;0]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Widgets"
+					Description "A bunch of small tools that can be used to show information on the main screen itself."
+					DevTime		2
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Computer;2007];[Smartphone;2008]]
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Notifications"
+					Description "Instant information for what happened currently at this very second."
+					DevTime		1
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2015];[Console;2007];[Smartphone;0];[Smartwatch;0]]
+					Submarkets	[ 1; 0; 3 ]
+					}
+					{
+					Name		"Sensors"
+					Description "This device will track how active you are."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2015]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					{
+					Name        "Motion Sensor"
+					Description "Control your character with your own body movement."
+					DevTime     4
+					Level       2
+					CodeArt     1
+					SoftwareCategories [[Console;2006]]
+					Submarkets  [ 1; 0; 0 ]
+					}
+					{
+					Name        "VR Support"
+					Description "Virtual Reality is now here, Immerse yourself in this world you'll be fine."
+					DevTime     6
+					Level       2
+					CodeArt     1
+					SoftwareCategories [[Console;2016]]
+					Submarkets  [ 1; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"GUI"
+			Optional    True
+			Spec		GUI
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Handwriting"
+					DevTime		2
+					Level		1
+					CodeArt		0.5
+					SoftwareCategories [[Computer;2009];[Smartphone;0]]
+					Submarkets	[ 1; 0; 3 ]
+					}
+					{
+					Name		"Snap"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Computer;2009]]
+					Submarkets	[ 2; 0; 3 ]
+					}
+					{
+					Name		"Touch"
+					Description "Now you can handle the device without a mouse and keyboard."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2012]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Audio"
+			Spec		Audio
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Surround sound"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2000];[Console;1991]]
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Speech recognition"
+					Description "You can now write by speaking."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2007];[Smartphone;2008];[Smartwatch;0];[Console;2005]]
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Mono Sound"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [Computer;Console;Smartphone;Smartwatch]
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Stereo Sound"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;1988];[Console;1987]]
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Reverberation"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Console;1991]]
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Synthesis Support"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Console;1994]]
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Custom Ringtones"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2007]]
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Speech Synthesis"
+					Description "Make your device talk and read for you."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2009];[Computer;2000]]
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Voice Control"
+					Description "Talk to your device and tell it what you need."
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Server      0.00002
+					SoftwareCategories [[Smartphone;2009];[Computer;2015];[Smartwatch;2015]]
+					Submarkets	0
+					Script_EndOfDay "/Scripts/OS/FreakOut.txt"
+					}
+					{
+					Name		"Voice Support"
+					Description "Making calls directly from your watch and talking to people."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartwatch;2016]]
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name        "Security"
+			Optional    True
+			Spec        Security
+			Description "Security resources for your computers self protection."
+			Unlock      1995
+			DevTime     12
+			CodeArt     1
+			Submarkets  [ 0; 1; 0 ]
+			Features
+			    [
+				    {
+					Name		"Data Encryption"
+					Description "Protect the data on your device by making it very hard to read and retireve together with a password that might even lock you out."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Virtualization"
+					Description "I put an OS in your OS, etc."
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;1988]]
+					Submarkets	[ 0; 3; 1 ]
+					}
+					{
+					Name		"System Policy"
+					Description "Allows administrators to limit what users are allowed to do on the system."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;1996]]
+					Submarkets	[ 0; 2; 1 ]
+					}
+					{
+					Name		"File Protection"
+					Description "Protects important files in the operating system from being modified"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;1999];[Console;1995];[Smartphone;0];[Smartwatch;0]]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"System recovery"
+					Description "Restores the system from a system recovery point."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2000];[Console;1999];[Smartphone;0];[Smartwatch;0]]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Backup"
+					Description "Create a backup file from where to restore from."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2004];[Console;2005];[Smartphone;0]]
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Firewall"
+					Description "Protects you from unwanted connections."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2001];[Smartphone;0]]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Integrated Antivirus"
+					Description "Pre-installed antivirus for your protection, no real need to purchase from 3rd party!"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2006]]
+					Server      0.00001
+					Submarkets	[ 1; 3; 0 ]
+					}
+					{
+					Name		"Software Control"
+					Description "Controls what can be installed into the operating system, sometimes even prompting the user for permission."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2007];[Console;0];[Smartphone;0];[Smartwatch;0]]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Multi-Factor Authentication"
+					Description "Allows the user to log in to a system using biometrics or special passcodes and tools."
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2015];[Smartphone;2013]]
+					Submarkets	[ 0; 4; 1 ]
+					}
+					{
+					Name		"Unified Search Engine"
+					Description "Allows the user to search for anything that is on the computer or on the internet through a search bar"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Computer;2010]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Optional	True
+			Spec		Network
+			Description	"How will anonymous people troll each other all over the world without this handy feature?"
+			Unlock		1985
+			DevTime		8
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-update"
+					Description	"Patch bugs, secure against malware and restart in the middle of an unsaved 60 page essay"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;1998];[Console;2005];[Smartphone;0];[Smartwatch;0]]
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Cloud backup"
+					Description "Now save everything to servers somewhere in the world."
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2015];[Console;2014];[Smartphone;2011]]
+					Submarkets	[ 3; 2; 0 ]
+					}
+					{
+					Name		"Symbolic Link"
+					Description "A function like a shortcut."
+					DevTime		3
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Computer;2004]]
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Remote Desktop"
+					Description "Control a system without being infront of it."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;2001]]
+					Submarkets	[ 1; 3; 0 ]
+					}
+					{
+					Name		"Bluetooth Support"
+					Description "Connection between devices, 1 on 1."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Computer;1989];[Smartphone;0];[Smartwatch;0]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Ad Hoc"
+					Description "A local network to connect between various devices between eachother."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Console;2004];[Smartphone;2013]]
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Geolocation"
+					Description "Now you can see where you are in the world."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2007]]
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Tethering"
+					Description "Share your internet connection with other devices."
+					DevTime		2
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2009]]
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Hotspot"
+					Description "Turn your device into a WiFi connection to all your other devices."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2010]]
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"NFC"
+					Description "Near Field Communication."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2010]]
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Screen Mirroring"
+					Description "Show the same thing you are watching on your phone on your TV."
+					DevTime		2
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2011]]
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"WiFi Calling"
+					Description "Call and recieve calls without using your minutes."
+					DevTime		2
+					Level		1
+					CodeArt		1
+					SoftwareCategories [[Smartphone;2015]]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name        "Subscription Service"
+					Description "Online features are now locked behind a pay wall!"
+					DevTime     3
+					Level       1
+					CodeArt     1
+					Server      0.001
+					SoftwareCategories [[Console;2002]]
+					Submarkets  [ 1; 1; 1 ]
+					}
+					{
+					Name		"Texting Capabilities"
+					Description "Send a custom message directly from your watch."
+					DevTime		2
+					Level		2
+					CodeArt		1
+					SoftwareCategories [[Smartwatch;2013]]
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Software Browser"
+					Description "A virtual store for application."
+					DevTime		3
+					Level		2
+					CodeArt		0.8
+					Server      0.0002
+					SoftwareCategories [[Computer;2012];[Console;2005];[Smartphone;2008];[Smartwatch;2014]]
+					Submarkets	[ 2; 1; 0 ]
+					}
+				]
+			}
+		]
+	}

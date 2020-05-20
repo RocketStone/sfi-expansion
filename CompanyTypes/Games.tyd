@@ -1,0 +1,10 @@
+CompanyType
+	{
+	Specialization		Games
+	PerYear				0.2
+	Min					3
+	Max					6
+	Types
+		[
+		]
+	}
